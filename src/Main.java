@@ -25,6 +25,7 @@ public class Main {
 
         DistanceCallBack distanceCallBack = new DistanceCallBack(client);
         client.setCallback(distanceCallBack);
+        System.out.println("Thomas syso");
 
         try {
             client.subscribe("telemetry/fuel");
