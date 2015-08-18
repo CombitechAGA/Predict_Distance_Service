@@ -24,7 +24,7 @@ public class DistanceCallBack implements MqttCallback{
         String message = mqttMessage.toString();
         String[] messageParts =message.split(";");
         String carID = messageParts[0];
-        float fuelLevel = Float.parseFloat(messageParts[1]);
+        float fuelLevel = Float.parseFloat(messageParts[2]);
         if(fuelLevel>10){
             fuelLevel=fuelLevel-10.0f;
         }
